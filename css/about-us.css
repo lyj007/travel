@@ -1,0 +1,275 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+/*伙伴*/
+.usImg
+{
+position:relative;
+animation:my 3s forwards;
+}
+
+@keyframes my
+{
+0%   { left:-30px; top:0px;}
+
+100% {left:20px; top:0px;}
+}
+
+.all{
+	width: 100%;
+	background-color: #F4F4F4;
+}
+.introduce {
+	width: 1250px;
+	height:250px;
+	margin: 0 auto;
+}
+
+.header_title {
+	width:70%;
+	margin:0 auto;
+	height: 100%;
+	margin-left: 300px;
+}
+
+.header_title > h1{
+	display: block;
+	margin-top: 0%;
+	margin-left: 0px;
+	font-family:微软雅黑;
+	color:#191919;
+    padding-top: 10px;
+}
+.header_title > p{
+	display: block;
+
+	height:30%;
+	font-size: 15px;
+	font-family: '微软雅黑'; 
+	color:grey;
+}
+.usImg {
+	height:30%;
+	margin-top: 20px;
+	float: left;
+}
+
+/*	团队成员*/
+
+#leadership {
+	text-align: center;
+	background: #f4f4f4;
+	width: 1250px;
+	margin: 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1250px;
+}
+
+.container ul {
+	list-style: none;
+	height: 623px;
+	width: 1250px;
+	/*border: 1px solid red;*/
+	margin-top: 15px;
+	background: white;
+}
+
+.container ul li {
+	float: left;
+	margin-left:50px;
+	/*margin: 0px auto;*/
+	height: 300px;
+	width: 246px;
+	border: 1px solid darkgray;
+	margin-top: 10px;
+}
+
+
+.container ul li img {
+	border-radius: 50%;
+}
+
+
+/*沙*/
+
+.container ul li .nvhai1 {
+	color: purple;
+	margin-top: -30px;
+}
+
+#leadership p {
+	color: #ec008c;
+	font: 22px "微软雅黑";
+	margin-top: 15px;
+}
+
+#leadership .spanz {
+	font-family: "微软雅黑";
+	color: #5e5e5e;
+	display: block;
+	margin-top: 15px;
+}
+#leadership .spanz .text-spanz-top{
+	height: 35px;
+	margin: 0 auto;
+}
+.container ul li .spanz #texth {
+	display: none;
+}
+
+.container ul li .spanz #textc {
+	font-size: 17px;
+}
+.container ul li .spanz #liaojie{
+	margin-top: 25px;
+	display: block;
+}
+a{
+	color: #8e8e8e;
+}
+a:link{
+	color:#8e8e8e;;
+}
+a:visited{
+	/*color: #228B22;*/
+}
+a:hover{
+	color:  #2098F5;
+}
+a:active{
+	color: #8e8e8e;;
+}
+
+.container ul li:hover {
+	background: #dddddd;
+	cursor: pointer;
+}
+
+.container ul li:hover #texth {
+	display: block;
+	color: white;
+	margin-top: 6px;
+}
+
+.container ul li:hover #textc {
+	color: white;
+	font-size: 18px;
+}
+
+/*过程*/
+
+.process {
+	margin: 0 auto;
+	margin-top: 650px;
+	text-align: center;
+	background-color: white;
+	width: 1250px;
+	height: 500px;
+	border: 1px solid lightgray;
+	/*border: 1px solid red;*/
+}
+
+.process-img {
+	width: 1041px;
+	height: 500px;
+	/* border: 1px solid darkgray;*/
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-left: 110px;
+	width: 1041px;
+	height: 362px;
+	background: url(../img/all1.png);
+}
+
+
+/*联系*/
+
+.contact {
+	margin: 0 auto;
+	width: 1250px;
+	height: 600px;
+	border: 1px solid lightgray;
+	margin-top: 75px;
+	background: url(../img/lianxi.jpg), no-repeat;
+}
+
+.contact #login {
+	background-color: white;
+	height: 450px;
+	width: 500px;
+	margin-left: 350px;
+	margin-top: 10px;
+	padding: 30px;
+	z-index: 0;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, .2), 0 3px 0 #fff, 0 4px 0 rgba(0, 0, 0, .2), 0 6px 0 #fff, 0 7px 0 rgba(0, 0, 0, .2);
+}
+
+.contact h1 {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);
+	text-align: center;
+	color: #666;
+	margin: 0 0 20px 0;
+}
+
+.contact p {
+	text-align: center;
+	color: #666;
+	margin: 0 0 20px 0;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#inputs input {
+	padding: 15px 15px 15px 30px;
+	margin: 0 0 10px 0;
+	width: 335px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+#inputs input:focus {
+	background-color: #fff;
+	border-color: #e8c291;
+	outline: none;
+	box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+#inputs #details {
+	height: 30px;
+}
+
+#actions {
+margin-left: 150px;
+}
+
+#send {
+	background-color: #ffb94b;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d69e31 #e3a037 #d5982d #e3a037;
+	
+	height: 35px;
+	padding: 0;
+	width: 120px;
+	cursor: pointer;
+	font: bold 15px 微软雅黑;
+	color: #8f5a0a;
+}
+
+#actions a {
+	color: #3151A2;
+	float: right;
+	line-height: 35px;
+	margin-left: 10px;
+}

@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	font-size: 14px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.display-on{
+	display: block;
+}
+
+.display-none{
+	display: none;
+}
+
+.active{
+	background-color: #316dc5 !important;
+	border: 1px solid #316DC5 !important;
+	color: #FFFFFF !important;
+}
+
+.m-left{
+	margin-left:5px ;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 1250px;
+	margin: 0 auto;
+}
+
+.introduction{
+	background-color: #f4f4f4;
+}
+
+.nav{
+	padding: 60px;
+}
+
+.nav a{
+	text-align: center;
+	line-height: 30px;
+	color: #898989;
+	width: 90px;
+	height: 31px;
+	background-color: white;
+	border: 1px solid rgba(188,188,188,1);
+	display: block;
+	float: left;
+}
+
+.nav a:hover{
+	background-color: #316dc5;
+	border: 1px solid #316DC5;
+	color: #FFFFFF;
+}
+
+.content{
+	padding-bottom: 100px;
+	min-height: 600px;
+}
+
+.info-list{
+	list-style-type: none;
+	margin-left: 40px;
+	
+}
+
+.info{
+	float: left;	
+	width: 350px;
+	padding: 20px;
+	
+}
+
+.info-anime1{
+	animation-name: fadeInUp;
+  	animation-duration: 1s;
+ 	animation-fill-mode: both;
+}
+
+.info-anime2{
+	animation-name: fadeInUp;
+  	animation-duration: 1.2s;
+ 	animation-fill-mode: both;
+}
+
+.info-anime3{
+	animation-name: fadeInUp;
+  	animation-duration: 1.5s;
+ 	animation-fill-mode: both;
+}
+
+.info-box{
+	width: 350px;
+	height: 270px;
+	border-bottom: 2px solid skyblue;
+	background-color: white;
+	margin-bottom: 15px;
+}
+
+.info-img{
+	width: 340px;
+	height: 190px;
+	padding: 5px;
+	transition: all ease-out 0.3s;
+	cursor: pointer;
+}
+
+.info-img:hover{
+	height: 195px;
+	width: 350px;
+	padding: 0px 0px 5px 0px;
+}
+
+.info-box a{
+	color: #6b6b6b;
+	text-align: center;	
+	display: block;
+	padding: 5px;
+}
+
+.info-box span{
+	color:#c4c4c4;
+	display: block;
+	text-align: center;
+	padding: 5px;
+	font-size: 12px;
+}
+
+footer{
+	background-color: white;
+	color: #8e8e8e;
+	font-size: .875em;
+	font-family: 'Open Sans', Sans-serif;
+}
+
+
+.footer-box{
+	display: inline-block;
+	border-bottom: 1px solid #8e8e8e;
+	padding-bottom: 40px;
+}
+
+.footer-top{
+	padding-top: 60px;
+}
+
+.fbox{
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 30.33333333%;
+	text-align: left;
+}
+
+.fbox-content{
+	font-size: 1em;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.footer-bottom{
+	text-align: center;
+}
+
+.copyright{
+	line-height: 95px;
+}
+
+.footer-bottom a{
+	color: #8e8e8e;
+}

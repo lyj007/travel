@@ -1,0 +1,77 @@
+/*伙伴*/
+.huobanimg
+{
+position:relative;
+animation:myfirst 2s forwards;
+}
+
+@keyframes myfirst
+{
+0%   { left:-50px; top:0px;opacity: 0}
+
+100% {left:100px; top:0px; opacity: 1}
+}
+
+.huoban{
+	width: 100%;
+	height:500px;
+	background-color: #F4F4F4;
+	position: relative;
+	padding-top: 100px;
+}
+.huobana-top{
+	margin: 0 auto;
+	text-align: center;
+}
+.huobana-top h2{
+	font-size: 30px;
+}
+.huobana-top span{
+	display: block;
+	color: #8e8e8e;
+	margin-top: 5px;
+}
+.huobana{
+	width: 1250px;
+	margin: 0 auto;
+
+}
+
+.huobana-content{
+	/*background: green;*/
+	margin-top: 15px;
+}
+
+.huobanimg {
+margin-top: 20px;
+float: left;
+}
+.huoban_title {
+	width: 670px;
+    margin-top:15px;
+    /*border: 1px solid red;*/
+	float: right;
+	color: #4c5a65;
+	/*line-height: 100px;*/
+}
+
+.huoban-back{
+	border: 1px solid #8E8E8E;
+	float: left;
+	margin-top: 40px;
+}
+.huoban-back a{
+	text-align: center;
+	line-height: 25px;
+	display: block;
+	padding-left:14px;
+	padding-right: 14px;
+	color: #8E8E8E;
+	font-size: 16px;
+}
+.huoban-back a:hover{
+	color: #2098F5;
+}
+.huoban-back:hover{
+	border:1px solid #2098F5;
+}

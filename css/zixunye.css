@@ -1,0 +1,421 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.main1 {
+	width: 1250px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+
+.top {
+	width: 1250px;
+	height: 100px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+}
+
+.top ul {
+	/*width: 800px;*/
+	height: 100px;
+	margin-left: 50px;
+	/*border: 1px solid lightgray;*/
+}
+
+.top ul li {
+	width: 200px;
+	height: 50px;
+	border: 1px solid lightgrey;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	color: darkgray;
+	list-style: none;
+}
+
+.top ul li:hover {
+	width: 200px;
+	height: 50px;
+	background: deepskyblue;
+	/*color: white;*/
+}
+
+.container1 {
+	width: 1250px;
+	/*border: 1px solid red;*/
+	float: left;
+}
+
+.container1 ul li {
+	width: 1200px;
+	height: 300px;
+	list-style: none;
+	margin-top: 50px;
+	margin-left: 50px;
+	/*border: 1px solid darkgray;*/
+}
+
+.container1 ul li .neirong1 {
+	width: 1200px;
+	height: 300px;
+	/*margin-left: 0px;*/
+	margin-top: 20px;
+	/*overflow: hidden;*/
+	/*border: 1px solid blue;*/
+}
+
+.container1 ul li .neirong2 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid orchid;*/
+}
+
+.container1 ul li .neirong3 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid blue;*/
+}
+
+.container1 ul li .neirong4 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid orchid;*/
+}
+
+.container1 ul li .neirong5 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid blue;*/
+}
+
+.container1 ul li .neirong6 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid orchid;*/
+}
+
+.container1 ul li .neirong7 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid blue;*/
+}
+
+.container1 ul li .neirong8 {
+	width: 1200px;
+	height: 300px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*border: 1px solid orchid;*/
+}
+
+.container1 ul li div:hover> .photo {
+	width: 400px;
+	height: 300px;
+	margin-top: 20px;
+	transform: scale(1.2);
+}
+
+.container1 ul li div:hover>.wenzi {
+	margin-left: 20px;
+	/*transform: scale(.3); */
+}
+
+.container1 ul li div .photo {
+	width: 320px;
+	height: 240px;
+	transition: all .5s;
+	overflow: hidden;
+	float: left;
+}
+
+.container1 ul li div img {
+	width: 320px;
+	height: 240px;
+	float: left;
+	cursor: pointer;
+	/*transition: all .5s; */
+}
+
+.container1 ul li .wenzi {
+	width: 750px;
+	/*background: pink;*/
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	/*border: 1px solid green;*/
+}
+
+.wenzi h3 {
+	width: 700px;
+	margin-left: 20px;
+	margin-top: 30px;
+	float: left;
+}
+
+.wenzi h3 a {
+	display: block;
+	text-decoration: none;
+}
+
+.wenzi h3 a:hover {
+	text-decoration: underline;
+	color: orangered;
+}
+
+.wenzi p {
+	float: left;
+	width: 700px;
+	/*border: 1px solid red;*/
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.wenzi-p1 {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #9e9e9e;
+}
+
+.wenzi-p2 {
+	font-size: 14px;
+	color: #5e5e5e;
+	font-family: "微软雅黑";
+}
+
+.container2 {
+	width: 1250px;
+	/*border: 1px solid black;*/
+	float: left;
+	display: none;
+}
+
+.container2 ul li {
+	width: 1250px;
+	height: 300px;
+	list-style: none;
+	margin-top: 50px;
+	/*border-bottom: 1px solid darkgray;*/
+}
+
+.container2 ul li .neirong1,
+.neirong2,
+.neirong3,
+.neirong4,
+.neirong5,
+.neirong6,
+.neirong7,
+.neirong8 {
+	width: 1250px;
+	height: 300px;
+	margin-left: 50px;
+	/*border: 1px solid lightgray;*/
+}
+
+.container2 ul li div:hover> .photo {
+	width: 400px;
+	height: 300px;
+	transform: scale(1.2);
+}
+
+.container2 ul li div:hover> .wenzi {
+	margin-left: 20px;
+}
+
+.container2 ul li div .photo {
+	width: 320px;
+	height: 240px;
+	transition: all .5s;
+	overflow: hidden;
+	float: left;
+}
+
+.container2 ul li div img {
+	width: 320px;
+	height: 240px;
+	float: left;
+	cursor: pointer;
+}
+
+
+/*.container2 ul li div img:hover{
+	width: 400px;
+	height: 300px;
+	transform: scale(1.4);  
+	
+	
+}*/
+
+.container2 ul li .wenzi {
+	width: 700px;
+	/*background: pink;*/
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	transition: all .5s;
+	/*border: 1px solid blue;*/
+}
+
+.wenzi h3 {
+	width: 700px;
+	margin-left: 50px;
+	margin-top: 30px;
+	float: left;
+}
+
+.wenzi h3 a {
+	display: block;
+	text-decoration: none;
+}
+
+.wenzi h3 a:hover {
+	text-decoration: underline;
+	color: orangered;
+}
+
+.wenzi p {
+	float: left;
+	width: 700px;
+	/*border:1px solid red;*/
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+.wenzi-p1 {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #9e9e9e;
+}
+
+.wenzi-p2 {
+	font-size: 14px;
+	color: #5e5e5e;
+	font-family: "微软雅黑";
+}
+
+.container3 {
+	width: 1250px;
+	/*border: 1px solid black;*/
+	float: left;
+	position: absolute;
+	display: none;
+}
+
+.container3 ul li {
+	width: 1250px;
+	height: 300px;
+	list-style: none;
+	margin-top: 50px;
+	/*border-bottom: 1px solid darkgray;*/
+}
+
+.container3 ul li .neirong1,
+.neirong2,
+.neirong3,
+.neirong4,
+.neirong5,
+.neirong6,
+.neirong7,
+.neirong8 {
+	width: 1250px;
+	height: 300px;
+	margin-left: 50px;
+	/*border: 1px solid lightgray;*/
+}
+
+.container3 ul li div:hover> .photo {
+	width: 400px;
+	height: 300px;
+	transform: scale(1.2);
+}
+
+.container3 ul li div:hover> .wenzi {
+	margin-left: 20px;
+}
+
+.container3 ul li div .photo {
+	width: 320px;
+	height: 240px;
+	transition: all .5s;
+	overflow: hidden;
+	float: left;
+}
+
+.container3 ul li div img {
+	width: 320px;
+	height: 240px;
+	float: left;
+	cursor: pointer;
+}
+
+.container3 ul li .wenzi {
+	width: 700px;
+	transition: all .5s;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.wenzi h3 {
+	width: 700px;
+	margin-left: 50px;
+	margin-top: 30px;
+	float: left;
+	border-bottom: 1px solid lightgray;
+}
+
+.wenzi h3 a {
+	display: block;
+	font-family: "微软雅黑";
+	text-decoration: none;
+	font-weight: 400;
+	color: #5e5e5e;
+}
+
+.wenzi h3 a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.wenzi p {
+	float: left;
+	width: 700px;
+	/*border:1px solid red;*/
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+.wenzi-p1 {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #9e9e9e;
+}
+
+.wenzi-p2 {
+	font-size: 14px;
+	color: #5e5e5e;
+	font-family: "微软雅黑";
+}
+
+/*a {*/
+	/*height: 40px;
+	width: 50px;
+	display: block;
+	float: right;*/
+	/*margin-left: 20px;*/
+/*}*/

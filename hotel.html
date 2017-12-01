@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/hotel.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="backtop" id="backtop" onclick="returnTop();">Top</div>
+<div class="main">
+    <div class="header" id="header">
+        <div class="logo">
+            <img src="img/logo1.png" />
+            <p>
+                <b>成都旅游</b>
+                <i>Chengdu traveling</i>
+            </p>
+        </div>
+
+        <div class="header-menu">
+            <ul>
+                <li>
+                    <a href="index.html" style=" text-decoration: none;">首页</a>
+                </li>
+                <li>
+                    <a href="journey.html " style=" text-decoration: none;">景点推荐</a>
+                </li>
+                <li>
+                    <a href="meishi.html" style=" text-decoration: none;">美食推荐</a>
+                </li>
+                <li>
+                    <a href="gonglue.html" style=" text-decoration: none;">旅游攻略</a>
+                </li>
+                <li>
+                    <a href="around.html" style=" text-decoration: none;">周边</a>
+                </li>
+                <li>
+                    <a href="chuxing.html" style=" text-decoration: none;">出行方式</a>
+                </li>
+                <li>
+                    <a href="zixunye.html" style=" text-decoration: none;">新闻资讯</a>
+                </li>
+                <li>
+                    <a href="guanyu.html" style=" text-decoration: none;">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<hr/>
+
+<div class="location">
+    <p>您的位置：首页 > 酒店预订 > 成都酒店 > 成都安卓@家酒店  </p>
+    <span>低价承诺 预订价高于酒店门市价，3倍差额赔付</span>
+</div>
+<div class="order">
+    <form  class="form">
+        <label>目地的:</label>
+        <input type="text" value="成都">
+        <label>入住时间：</label>
+        <input type="datetime-local">
+        <label>退房时间：</label>
+        <input type="datetime-local">
+        <label>关键词：</label>
+        <input type="text" placeholder="酒店名/地标/品牌" id="key">
+
+        <input type="button" value="搜索" id="btn"/>
+    </form>
+    <div id="keyword">
+        <label>交通枢纽</label>
+        <ul>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+        </ul><hr/>
+        <label>交通枢纽</label>
+        <ul>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+        </ul><hr/>
+        <label>交通枢纽</label>
+        <ul>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+            <li>成都北门车站</li>
+        </ul>
+    </div>
+</div>
+<div class="hotel">
+    <div class="hotel-name">
+        <h2>成都安卓@家酒店</h2>
+        <p>地址：锦江区东大街紫东楼段138号 咔乐迪歌城旁</p>
+    </div>
+    <div class="hotel-img">
+        <div class="hotel-img-left">
+
+
+            <div id="myCarousel" class="carousel slide">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./img/big.jpg" >
+                    </div>
+                    <div class="item">
+                        <img src="./img/hotel6.jpg" style="width: 480px;height:320px;" >
+                    </div>
+                    <div class="item">
+                        <img src="./img/hotel7.jpg" style="width: 480px;height:320px;">
+                    </div>
+                    <div class="item">
+                        <img src="./img/hotel8.jpg" style="width: 480px;height:320px;">
+                    </div>
+                    <div class="item">
+                        <img src="./img/hotel9.jpg" style="width: 480px;height:320px;">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel"
+                   data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel"
+                   data-slide="next">&rsaquo;</a>
+            </div>
+
+
+
+
+        </div>
+        <div class="hotel-img-middle">
+            <ul class="hotel-img-middle1">
+                <li><img src="img/hotelimg1.jpg" width="150px" height="130px"  style="border:2px solid gainsboro"></li>
+                <li><img src="img/hotelimg2.jpg" width="150px"  height="130px" style="border:2px solid gainsboro"></li>
+                <li><img src="img/hotelimg3.jpg" width="150px"  height="130px" style="border:2px solid gainsboro"></li>
+            </ul>
+            <ul class="hotel-img-middle2" >
+                <li><img src="img/hotelimh4.jpg" width="230px" height="150px" style="border:2px solid gainsboro"></li>
+                <li><img src="img/hotelimg5.jpg" width="230px"  style="border:2px solid gainsboro"></li>
+            </ul>
+        </div>
+        <div class="hotel-img-right">
+            <ul>
+                <li><div class="yuding"><label>￥110起</label>
+                    <span>预定</span>
+                    <a href="#">手机查看
+                         <div class="ma"><img src="img/ma.png"/> </div>
+                     </a>
+                </div>
+                    <div class="haoping">好评率76%<br/>来自2999位的旅客的评价</div>
+                </li><hr>
+                <li class="slide">
+                    <div class="pingjia">位置优越，交通方便，卫生还行</div>
+                </li><hr>
+                <li><div class="sheshi"><p>设施</p></div></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="select">
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#hotelx" data-toggle="tab">
+                房型选择
+            </a>
+        </li>
+        <li><a href="#ios" data-toggle="tab">周边景点</a></li>
+        <li><a href="#ios" data-toggle="tab">周边酒店</a></li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="hotelx">
+            <div id="homg-main" style="margin-top: 10px">
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne">
+                                    <img src="img/hotelimg1.jpg" width="150px" style="float:left;"/>
+                                    <span class="nosmok">无烟房单间（内窗）</span>
+                                    <ul>
+                                        <li>房间15-20㎡</li>
+                                        <li>大床1.5米</li>
+                                        <li>宽带：免费WIFI</li>
+                                        <li>可住：2人</li>
+                                    </ul>
+                                    <label class="pull-right">￥108起</label>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+
+                                        <span>   其他: 房间窗户较小，还有部分房间没有窗户，同时只有部分房间有免费宽带接口。; 请选择; 内窗</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo">
+                                    <img src="img/hotelimg1.jpg" width="150px" style="float:left;"/>
+                                    <span class="nosmok">商务标间（内窗）</span>
+                                    <ul>
+                                        <li>房间15-20㎡</li>
+                                        <li>大床1.5米</li>
+                                        <li>宽带：免费WIFI</li>
+                                        <li>可住：2人</li>
+                                    </ul>
+                                    <label class="pull-right">￥138起</label>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+
+                                        <span>   其他: 房间窗户较小，还有部分房间没有窗户，同时只有部分房间有免费宽带接口。; 请选择; 内窗</span>
+                                    </li>
+                                </ul>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree">
+                                    <img src="img/hotelimg1.jpg" width="150px" style="float:left;"/>
+                                    <span class="nosmok">大床房（内窗）</span>
+                                    <ul>
+                                        <li>房间15-20㎡</li>
+                                        <li>大床1.5米</li>
+                                        <li>宽带：免费WIFI</li>
+                                        <li>可住：2人</li>
+                                    </ul>
+                                    <label class="pull-right">￥164起</label>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+                                        <p class="pull-left col-lg-3">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p><p class="pull-left col-lg-2">供应商</p>
+                                    </li>
+                                    <li>
+
+                                        <span>   其他: 房间窗户较小，还有部分房间没有窗户，同时只有部分房间有免费宽带接口。; 请选择; 内窗</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ios">
+
+            <div class="jingdian" style="width:1250px;height:280px; margin-top: 10px;">
+                <ul >
+                    <li style="float:left"><img src="img/wuhouci.jpeg" style="width:350px; margin-left: 10px"></li>
+                    <li style="float:left"><img src="img/wenshuyuan.jpeg" style="width:350px;margin-left: 30px"></li>
+                    <li style="float:left"><img src="img/jinsha.png" style="width:350px; height:190px;margin-left: 30px"></li><br>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright">
+                ©
+                <a href="#">Heera</a>
+                2017 - More Templates
+                <a href="#">Nurgle</a>
+                Collect from
+                <a href="#">旅游网站</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    var  keyword=document.getElementById('keyword');
+    var  key=document.getElementById('key');
+    key.onclick=function(){
+        keyword.style.display="block";
+    }
+    key.onblur=function(){
+        keyword.style.display="none";
+    }
+</script>

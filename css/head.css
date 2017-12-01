@@ -1,0 +1,81 @@
+.header{
+	margin: 0 auto;
+	width: 1250px;
+	height: 100px;
+	background: white;
+	/*background: gray;*/
+}
+.header .logo{
+	height: 100px;
+	float: left;
+	/*width: 200px;*/
+	/*border: 1px solid red;*/
+}
+.header .logo img{
+	width: 100px ;
+	height: 100px;
+	float: left;
+}
+.header .logo p{
+	display: block;
+	float: left;
+	/*border: 1px solid red;*/
+}
+.header .logo b{
+	display: block;
+	padding-top: 35px;
+	font-size: 20px;
+}
+.header .logo i{
+	font-size: 14px;
+	color: gray;
+}
+
+.header-menu{
+	/*width: 400px;*/
+	height: 100px;
+	float: right;
+	/*border: 1px solid red;*/
+}
+.header-menu ul{
+	float: right;
+	list-style: none;
+}
+.header-menu ul li{
+	float: left;
+	margin: auto 20px;
+	line-height: 100px;
+}
+.header-menu ul li a{
+	/*color: #808080;*/
+	color: black;
+	font-size: 14px;
+}
+.header-menu ul li a:hover{
+	color: #2098F5;
+}
+
+.backtop{
+    width: 35px;
+    height: 35px;
+    /*background: #bbbbbb;*/
+    position: fixed;
+	top: 92%;
+	left: 95%;
+    z-index: 200;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    /*display: none;*/
+   color: #8E8E8E;
+   border: 1px solid #8E8E8E;
+}
+.backtop:hover{
+	/*color: #2098F5;*/
+	/*border: 1px solid #2098F5;*/
+	border: none;
+	color: white;
+	background:#2098F5 ;
+    cursor: pointer;
+	
+}

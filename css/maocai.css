@@ -1,0 +1,129 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+.one{
+	width: 1250px;
+	height: 800px;
+	/*background: lightgray;*/
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.one ul li{
+	width: 280px;
+	height: 300px;
+	float: left;
+
+	margin-left:30px ;
+	margin-top: 50px;
+	border-radius:15px ;
+	box-shadow: 0 0 5px 3px lightgray;
+}
+.one-1{
+	width: 135px;
+	height: 100px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.one-2{
+	margin-top: 15px;
+	width: 280px;
+	height: 20px;
+	/*border: 1px solid red;*/
+}
+.one-3{
+	width: 280px;
+	height: 150px;
+	/*border: 1px solid red;*/
+}
+
+h3{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight:400 ;
+}
+.p2{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: grey;
+	display: block;
+	margin: 20px;
+}
+.img:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: 0.6s;
+    opacity: 0.8;
+}
+
+/*在线预订*/
+.two{
+	width: 1250px;
+	height: 650px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.two1{
+	width: 1210px;
+	height: 40px;
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+	border-bottom: 1px solid gray;
+
+}
+ 
+.two2 {
+  text-align: left;
+  padding: 90px 0;
+  /*border: 1px solid red;*/
+  background: url(../img/reserve.jpg)no-repeat no-repeat ;
+  
+}
+.two2 form {
+ width: 1250px;
+  margin: 0 auto;
+  text-align: center;
+}
+/*****************留言板*/
+.two2 form ul li:last-child {
+  width: 100%;
+
+}
+#message{
+	height: 130px ;
+}
+.two2 form li {
+  display: inline-block;
+  width: 32%;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+.two2 form li input {
+  width: 98%;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  height: 40px;
+}
+.two2 label {
+	color: #ffffff; ;
+  display: block;
+}
+.two2 .reserve {
+  color: #ffffff;
+  background: #e25111;
+  padding: 8px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.two2 .reserve:hover {
+  opacity: 0.6;
+}

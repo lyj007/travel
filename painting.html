@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画册</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    <link rel="stylesheet" href="css/journey.css" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul li{
+        list-style: none;
+    }
+    body,html{
+        font-size: 18px;
+        font-family: "微软雅黑";
+    }
+    .painting{
+        width: 1250px;
+        height: auto;
+        background: white;
+        position: relative;
+        left: 50%;
+        margin-left: -625px;
+    }
+    .painting-head{
+        height: 80px;
+        /*border:1px solid red;*/
+    }
+    /*.painting-head h2{*/
+        /*text-align: center;*/
+        /*line-height: 80px;*/
+    /*}*/
+    .painting-middle{
+        height: auto;
+        /*border:1px solid red;*/
+    }
+    .painting1{
+        height: 380px;
+        /*background-color: rgba(0,0,0,0.07);*/
+        /*border-radius: 50px;*/
+        /*border:1px solid red;*/
+    }
+    .painting1-left{
+        width: 390px;
+        height: 380px;
+        /*border:1px solid red;*/
+        background-color: rgba(0,0,0,0.07);
+        border-radius: 50px;
+        float:left;
+    }
+    .m-b-3-11{
+        width: 390px;
+        height: 250px;
+        position: relative;
+        /*float: left;*/
+        /*border: 1px solid red;*/
+    }
+    .bofang{
+        border-radius: 50px;
+        width: 390px;
+        height: 250px;
+        background: #ff0000;
+        margin-top: -255px;
+        background: url("img/start.jpg") no-repeat center center;
+        background-size: 20%;
+    }
+    .m-b-3-11 img{
+        border-radius: 50px;
+        width: 390px;
+        height: 250px;
+    }
+    .painting-middle img:hover{
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+    opacity:0.5;
+}
+    .m-b-3-12{
+        width: 390px;
+        height: 130px;
+        /*border: 1px solid red;*/
+    }
+    .m-b-3-12-top{
+        width: 390px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        /*border: 1px solid blue;*/
+        font-family: "楷体";
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .m-b-3-12-top a{
+        color: black;
+    }
+    .m-b-3-12-bottom{
+        width: 390px;
+        height: 80px;
+        /*border: 1px solid blue;*/
+    }
+    .m-b-3-12-bottom dt,.m-b-3-12-bottom img,.m-b-3-12-bottom a{
+        float:left;
+    }
+    .m-b-3-12-bottom dt,.m-b-3-12-bottom a{
+        text-align: center;
+        line-height: 80px;
+        color: black;
+    }
+    .m-b-3-12-bottom img{
+        margin-top: 15px;
+        margin-left: 10px;
+        border-radius: 25px;
+    }
+    .writer,.liuyan{
+        float:left;
+    }
+    .writer{
+        width: 210px;
+        height: 80px;
+        /*border: 1px solid blue;*/
+    }
+    .liuyan{
+        width: 145px;
+        height: 80px;
+        /*border: 1px solid blue;*/
+        margin-left: 30px;
+    }
+
+    .painting1-right{
+        width: 780px;
+        height: 380px;
+        /*border:1px solid red;*/
+        margin-left: 50px;
+        float:left;
+        /*background-color: rgba(0,0,0,0.07);*/
+        border-radius: 50px;
+    }
+    .painting1-right p{
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .painting2-left{
+        width: 780px;
+        height: 380px;
+        /*background-color: rgba(0,0,0,0.07);*/
+        border-radius: 50px;
+        /*border:1px solid red;*/
+        float:left;
+    }
+    .painting2-left p{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    .painting2-right{
+        width: 390px;
+        height: 380px;
+        /*border:1px solid red;*/
+        background-color: rgba(0,0,0,0.07);
+        border-radius: 50px;
+        margin-left: 50px;
+        float:left;
+    }
+    .painting2,.painting3,.painting4,.painting5{
+        height: 380px;
+        /*background-color: rgba(0,0,0,0.07);*/
+        /*border-radius: 50px;*/
+        /*border:1px solid red;*/
+        margin-top: 30px;
+    }
+    .painting-bottom{
+        height: 80px;
+        /*border:1px solid red;*/
+    }
+    .painting-bottom a{
+        display: block;
+        text-align: center;
+        line-height: 80px;
+        height: 80px;
+    }
+</style>
+<body>
+
+<div class="main">
+    <div class="header" id="header">
+        <div class="logo">
+            <img src="img/logo1.png" />
+            <p>
+                <b>成都旅游</b>
+                <i>Chengdu traveling</i>
+            </p>
+        </div>
+
+        <div class="header-menu">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="journey.html">景点推荐</a>
+                </li>
+                <li>
+                    <a href="meishi.html">美食推荐</a>
+                </li>
+                <li>
+                    <a href="gonglue.html">旅游攻略</a>
+                </li>
+                <li>
+                    <a href="around.html">周边</a>
+                </li>
+                <li>
+                    <a href="chuxing.html">出行方式</a>
+                </li>
+                <li>
+                    <a href="zixunye.html">新闻资讯</a>
+                </li>
+                <li>
+                    <a href="guanyu.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="painting">
+    <div class="painting-head">
+            <div style="width:200px;height: 80px; float:left;text-align: center;line-height: 80px;font-family: 楷体;font-weight: bold"><h1>全部画册</h1></div>
+            <div style="background:lightgrey;width:60px;height: 30px; margin-left: 950px; border-radius:10px;float:left;text-align: center;line-height: 30px;margin-top: 20px;font-family: 'Times New Roman';font-weight: bold"><a href="journey.html" style="color: black">back</a></div>
+    </div>
+    <div class="painting-middle">
+        <div class="painting1">
+            <div class="painting1-left">
+                <div class="m-b-3-11">
+                    <img src="img/gallary1.jpg" width="390px" height="250px"/>
+                    <div class="bofang"></div>
+                </div>
+                <div class="m-b-3-12">
+                    <div class="m-b-3-12-top">
+                        <a href="#">杜甫草堂</a>
+                    </div>
+                    <div class="m-b-3-12-bottom">
+                        <div class="writer">
+                            <dt>&nbsp;&nbsp;作者：</dt>
+                            <a href="#">普通小姐</a>
+                            <img src="img/head-image1.jpg" width="50px" height="50px"/>
+                        </div>
+                        <div class="liuyan">
+                            <a href="#"><img src="img/liuyan.jpg" width="48px" height="48px"/>54条留言</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="painting1-right">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;成都杜甫草堂博物馆位于四川省成都市青羊区青华路37号，是中国唐代大诗人杜
+                    甫流寓成都时的故居。杜甫先后在此居住近四年，创作诗歌240余首。唐末诗人韦庄寻得草堂遗址，重结茅
+                    屋，使之得以保存，宋元明清历代都有修葺扩建。
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;草堂占地面积近300亩，完整保留着明弘治十三年（公元1500年）和清嘉庆
+                    十六年（公元1811年）修葺扩建时的建筑格局，建筑古朴典雅、园林清幽秀丽，是中国文学史上的一块圣地。
+                    1955年成立杜甫纪念馆，1985年更名为成都杜甫草堂博物馆。
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;博物馆是首批全国重点文物保护单位，首批国家一级博物馆，全国古籍重
+                    点保护单位，国家AAAA级旅游景区，是中国规模最大、保存最完好、知名度最高且最具特色的杜甫行踪遗迹
+                    地，年游客量达百万余人次。
+                </p>
+            </div>
+        </div>
+        <div class="painting2">
+            <div class="painting2-left">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;武侯祠（汉昭烈庙），全国重点文物保护单位，国家AAAA级旅游景区，国家一级
+                    博物馆。
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;武侯祠位于四川省成都市武侯区，肇始于公元223年修建刘备惠陵时，它是
+                    中国唯一的一座君臣合祀祠庙和最负盛名的诸葛亮、刘备及蜀汉英雄纪念地，也是全国影响最大的三国遗迹
+                    博物馆。1961年国务院公布为首批全国重点文物保护单位，2008年评选为首批国家一级博物馆。
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;成都武侯祠现占地15万平方米，由三国历史遗迹区（文物区）、西区（三
+                    国文化体验区）以及锦里民俗区（锦里）三部分组成，享有“三国圣地”的美誉。
+                </p>
+            </div>
+            <div class="painting2-right">
+                <div class="m-b-3-11">
+                    <img src="img/gallary2.jpg" width="390px" height="250px"/>
+                    <div class="bofang"></div>
+                </div>
+                <div class="m-b-3-12">
+                    <div class="m-b-3-12-top">
+                        <a href="#">武侯祠</a>
+                    </div>
+                    <div class="m-b-3-12-bottom">
+                        <div class="writer">
+                            <dt>&nbsp;&nbsp;作者：</dt>
+                            <a href="#">helln、</a>
+                            <img src="img/head-image2.jpg" width="50px" height="50px"/>
+                        </div>
+                        <div class="liuyan">
+                            <a href="#"><img src="img/liuyan.jpg" width="48px" height="48px"/>59条留言</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="painting3">
+            <div class="painting1-left">
+                <div class="m-b-3-11">
+                    <img src="img/gallary3.jpg" width="390px" height="250px"/>
+                    <div class="bofang"></div>
+                </div>
+                <div class="m-b-3-12">
+                    <div class="m-b-3-12-top">
+                        <a href="#">锦里</a>
+                    </div>
+                    <div class="m-b-3-12-bottom">
+                        <div class="writer">
+                            <dt>&nbsp;&nbsp;作者：</dt>
+                            <a href="#">灰色天空</a>
+                            <img src="img/head-image3.jpg" width="50px" height="50px"/>
+                        </div>
+                        <div class="liuyan">
+                            <a href="#"><img src="img/liuyan.jpg" width="48px" height="48px"/>69条留言</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="painting1-right">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;锦里是成都武侯祠博物馆（三国历史遗迹区、锦里民俗区、西区）的一部分，占
+                    地30000余平方米，建筑面积14000余平方米，街道全长550米，以明末清初川西民居作外衣，三国文化与成
+                    都民俗作内涵，集旅游购物、休闲娱乐为一体。
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;传说中锦里曾是西蜀历史上最古老、最具有商业气息的街道之一，早在秦
+                    汉、三国时期便闻名全国。现在，锦里占地30000余平方米，建筑面积14000余平方米，街道全长550米，以明
+                    末清初川西民居作外衣，三国文化与成都民俗作内涵，集旅游购物、休闲娱乐为一体。
+                </p>
+            </div>
+        </div>
+        <div class="painting4">
+            <div class="painting2-left">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;九寨沟：世界自然遗产、国家重点风景名胜区、国家
+                    AAAAA级旅游景区、国家级自然保护区、国家地质公园、世界生物圈保护区网络，是中国第一个以保护自然风
+                    景为主要目的的自然保护区。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;九寨沟位于四川
+                    省阿坝藏族羌族自治州九寨沟县境内，地处青藏高原、川西高原、山地向四川盆地过渡地带，南距成都市300
+                    多公里，是一条纵深50余千米的山沟谷地，总面积64297公顷，森林覆盖率超过80%。因沟内有树正寨、荷叶
+                    寨、则查洼寨等九个藏族村寨坐落在这片高山湖泊群中而得名。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;“九寨归来不看水”，是对九寨沟景色真实的诠释。泉、瀑、河、滩108个海子，构成
+                    一个个五彩斑斓的瑶池玉盆。长海、剑岩、诺日朗、树正、扎如、黑海六大景观，呈“Y”字形分布。翠海、
+                    叠瀑、彩林、雪峰、藏情、蓝冰，被称为“六绝”。神奇的九寨，被世人誉为“童话世界”，号称“水景之
+                    王”。</p>
+            </div>
+            <div class="painting2-right">
+                <div class="m-b-3-11">
+                    <img src="img/yichan2.jpg" width="390px" height="250px"/>
+                    <div class="bofang"></div>
+                </div>
+                <div class="m-b-3-12">
+                    <div class="m-b-3-12-top">
+                        <a href="#">九寨沟</a>
+                    </div>
+                    <div class="m-b-3-12-bottom">
+                        <div class="writer">
+                            <dt>&nbsp;&nbsp;作者：</dt>
+                            <a href="#">小雨</a>
+                            <img src="img/touxiang1.jpg" width="50px" height="50px"/>
+                        </div>
+                        <div class="liuyan">
+                            <a href="#"><img src="img/liuyan.jpg" width="48px" height="48px"/>54条留言</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="painting5">
+            <div class="painting1-left">
+                <div class="m-b-3-11">
+                    <img src="img/guzhen2.jpg" width="390px" height="250px"/>
+                    <div class="bofang"></div>
+                </div>
+                <div class="m-b-3-12">
+                    <div class="m-b-3-12-top">
+                        <a href="#">宽窄巷子</a>
+                    </div>
+                    <div class="m-b-3-12-bottom">
+                        <div class="writer">
+                            <dt>&nbsp;&nbsp;作者：</dt>
+                            <a href="#">杰克</a>
+                            <img src="img/touxiang2.jpg" width="50px" height="50px"/>
+                        </div>
+                        <div class="liuyan">
+                            <a href="#"><img src="img/liuyan.jpg" width="48px" height="48px"/>54条留言</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="painting1-right">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宽窄巷子位于四川省成都市青羊区长顺街附近，由宽
+                    巷子、窄巷子、井巷子平行排列组成，全为青黛砖瓦的仿古四合院落，这里也是成都遗留下来的较成规模的
+                    清朝古街道，与大慈寺、文殊院一起并称为成都三大历史文化名城保护街区。<br>&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;康熙五十七年（1718年），在平定了准葛尔之乱后，选留千余兵丁驻守
+                    成都，在当年少城基础上修筑了满城。民国初年，当时的城市管理者下文，将“胡同”改为“巷子” 。二十
+                    世纪80年代，宽窄巷子列入《成都历史文化名城保护规划》。2003年，宽窄巷子街区正式出现在世人的词典
+                    中。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宽窄巷子是国家AA级旅游景区，先后获
+                    2009年“中国特色商业步行街”、四川省历史文化名街、2011年成都新十景、四川十大最美街道等称号。
+                  </p>
+            </div>
+        </div>
+    </div>
+    <div class="painting-bottom">
+        <a href="painting.html"><img src="img/arrow.jpg" width="20px" height="20px" style="margin-top: 20px ; ">
+            <span  style="display: block; margin-top: -85px; width:60px; height:20px;  margin-left: 630px;color:black;">下一页</span></a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright">
+                ©
+                <a href="#">Heera</a>
+                2017 - More Templates
+                <a href="#">Nurgle</a>
+                Collect from
+                <a href="#">旅游网站</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
